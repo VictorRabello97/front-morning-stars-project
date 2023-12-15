@@ -49,10 +49,10 @@ function Mercadoria() {
                             <a href="/" className="mr-4 hover:underline md:mr-6 ">Home</a>
                         </li>
                         <li>
-                            <a href="/estoqueEntrada" className="mr-4 hover:underline md:mr-6">Entrada de Mercadorias</a>
+                            <a href="/estoqueEntrada" className="mr-4 hover:underline md:mr-6">Historico de Entradas</a>
                         </li>
                         <li>
-                            <a href="/estoqueSaida" className="mr-4 hover:underline md:mr-6">Saída de Mercadorias</a>
+                            <a href="/estoqueSaida" className="mr-4 hover:underline md:mr-6">Historico de Saidas</a>
                         </li>
                         <li>
                             <a href="/grafico" className="mr-4 hover:underline md:mr-6 ">Gráfico</a>
@@ -120,7 +120,7 @@ function Mercadoria() {
                 </tbody>
             </table>
 
-            <span className="block text-sm mt-12 text-gray-500 sm:text-center dark:text-gray-400">© 2023 Morning Star Suplly</span>
+            <span className="block text-sm mt-12 text-gray-500 sm:text-center dark:text-gray-400">© 2023 Victor Rabello</span>
 
         </div>
     )

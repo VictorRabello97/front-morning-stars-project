@@ -129,11 +129,11 @@ function Home() {
               <a href="/mercadorias" className="mr-4 hover:underline md:mr-6 ">Mercadorias</a>
             </li>
             <li>
-              <a href="/estoqueEntrada" className="mr-4 hover:underline md:mr-6">Entrada de Mercadorias</a>
+              <a href="/estoqueEntrada" className="mr-4 hover:underline md:mr-6">Historico de Entradas</a>
             </li>
 
             <li>
-              <a href="/estoqueSaida" className="mr-4 hover:underline md:mr-6">Saída de Mercadorias</a>
+              <a href="/estoqueSaida" className="mr-4 hover:underline md:mr-6">Historico de Saidas</a>
             </li>
             <li>
               <a href="/grafico" className="mr-4 hover:underline md:mr-6 ">Gráfico</a>
@@ -141,8 +141,8 @@ function Home() {
           </ul>
 
           {mostraCadastroSucesso && (
-            <div className='text-white bg-green-500 opacity-90 rounded-lg text-xl h-12 flex justify-center items-center p-4 font-bold'>
-              Cadastro feito com sucesso!
+            <div className='text-green-700  opacity-90 rounded-lg text-base h-12 flex justify-center items-center p-4 font-bold'>
+              * Cadastro feito com sucesso!
             </div>
           )}
         </div>
@@ -266,7 +266,7 @@ function Home() {
 
 
       {mostrarFormularioEstoque && (
-        <div className=" flex items-center -mt-4 ml-6 h-4/6">
+        <div className=" flex items-center mt-6 ml-6 h-4/6">
           <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleEstoque(handleSubmitEstoque)}>
 
             <div className="mb-4">
@@ -279,7 +279,7 @@ function Home() {
                 id="quantidade" type="number" placeholder="Quantidade"
                 onChange={(e) => setDadosEstoque({ ...dadosEstoque, quantidade: e.target.value })} />
               {errorsEstoque?.quantidade &&
-                <p className='text-xs text-red-500'>* Quantidade é obrigatório</p>}
+                <p className='text-xs text-red-500'>* Quantidade</p>}
 
             </div>
 
@@ -291,7 +291,7 @@ function Home() {
 
                 value={dadosEstoque.local}
                 {...registerEstoque("local")}
-                id="local" type="text" placeholder="Local"
+                id="local" type="text" placeholder="Nome"
                 onChange={(e) => setDadosEstoque({ ...dadosEstoque, local: e.target.value })} />
               {errorsEstoque?.local &&
                 <p className='text-xs text-red-500'>* Local é obrigatório</p>}
@@ -309,7 +309,7 @@ function Home() {
 
                 <option value=""></option>
                 <option value="entrada">Entrada</option>
-                <option value="saida">Saida</option>
+                <option value="saida">Saída</option>
               </select>
               {errorsEstoque?.operacao &&
                 <p className='text-xs text-red-500'>* Tipo de operação obrigatório</p>}
@@ -318,7 +318,7 @@ function Home() {
 
             <div className="mb-4">
               <label className="block text-gray-500 text-sm font-bold mb-2" id="mercadoriaId">
-                Selecione a Mercadoria:
+                Mercadoria:
               </label>
               <select className="border rounded w-full py-2 px-3 text-gray-700 leading-tight 
               focus:outline-none focus:shadow-outline"

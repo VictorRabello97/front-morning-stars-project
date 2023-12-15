@@ -66,36 +66,36 @@ function EstoqueSaida() {
                             <a href="/grafico" className="mr-4 hover:underline md:mr-6 ">Gráfico</a>
                         </li>
                         <li>
-                            <a href="/estoqueEntrada" className="mr-4 hover:underline md:mr-6 ">Entrada de Mercadorias</a>
+                            <a href="/estoqueEntrada" className="mr-4 hover:underline md:mr-6 ">Historico de Entradas</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div className="text-gray-300 font-bold flex ml-6 mb-4 mt-16 text-2xl">
-                Saída de Mercadorias
+                Historico de Saídas
             </div>
 
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" className="px-6 py-3">
-                            Quantidade
+                            Valor
                         </th>
                         <th scope="col" className="px-6 py-3">
-                            Local
+                            Nome
                         </th>
                         <th scope="col" className="px-6 py-3">
-                            Tipo da Operação
+                            Operação
                         </th>
                         <th scope="col" className="px-6 py-3">
-                            Mercadoria
+                            Categoria
                         </th>
                         <th scope="col" className="px-6 py-3">
-                            Data de Saida
+                            Data da Despesa
                         </th>
                         <th scope="col" className="px-6 py-3">
-                            Excluir Operação
+                            Excluir Despesa
                         </th>
                     </tr>
                 </thead>
@@ -131,7 +131,7 @@ function EstoqueSaida() {
                 </tbody>
             </table>
 
-            <span className="block text-sm mt-12 text-gray-500 sm:text-center dark:text-gray-400">© 2023 Morning Star Suplly</span>
+            <span className="block text-sm mt-12 text-gray-500 sm:text-center dark:text-gray-400">© 2023 Victor Rabello</span>
 
         </div>
     )

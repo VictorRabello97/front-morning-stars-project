@@ -172,17 +172,17 @@ function GraficoEstoque() {
                                 <a href="/mercadorias" className="mr-4 hover:underline md:mr-6">Mercadorias</a>
                             </li>
                             <li>
-                                <a href="/estoqueEntrada" className="mr-4 hover:underline md:mr-6 ">Entrada de Mercadorias</a>
+                                <a href="/estoqueEntrada" className="mr-4 hover:underline md:mr-6 ">Historico de Entradas</a>
                             </li>
                             <li>
-                                <a href="/estoqueSaida" className="mr-4 hover:underline md:mr-6 ">Saída de Mercadorias</a>
+                                <a href="/estoqueSaida" className="mr-4 hover:underline md:mr-6 ">Historico de Saídas</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="mb-4 ml-6">
-                    <label className="block text-gray-300 text-sm font-bold mb-2" id="operacao">Selecione a Mercadoria:</label>
+                    <label className="block text-gray-300 text-sm font-bold mb-2" id="operacao">Selecione a Categoria:</label>
                     <select className=" border rounded py-2 px-3 text-gray-700 leading-tight 
               focus:outline-none focus:shadow-outline w-64" name="mercadoria" id="mercadoria"
                         onChange={handleMercadoriaChange}

@@ -70,38 +70,38 @@ function EstoqueEntrada() {
                             <a href="/grafico" className="mr-4 hover:underline md:mr-6 ">Gráfico</a>
                         </li>
                         <li>
-                            <a href="/estoqueSaida" className="mr-4 hover:underline md:mr-6 ">Saída de Mercadorias</a>
+                            <a href="/estoqueSaida" className="mr-4 hover:underline md:mr-6 ">Historico de Saídas</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div className="text-gray-300 font-bold flex ml-6 mb-4 mt-16 text-2xl">
-                Entrada de Mercadorias
+                Historico de Entradas
             </div>
 
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" className="px-6 py-3">
-                            Quantidade
+                            Valor
                         </th>
                         <th scope="col" className="px-6 py-3">
-                            Local
+                            Nome
                         </th>
                         <th scope="col" className="px-6 py-3">
-                            Tipo da Operação
+                            Operação
                         </th>
                         <th scope="col" className="px-6 py-3">
-                            Mercadoria
-                        </th>
-
-                        <th scope="col" className="px-6 py-3">
-                            Data De Entrada
+                            Categoria
                         </th>
 
                         <th scope="col" className="px-6 py-3">
-                            Excluir Operação
+                            Data Do Projeto
+                        </th>
+
+                        <th scope="col" className="px-6 py-3">
+                            Excluir Projeto
                         </th>
 
                     </tr>
@@ -139,7 +139,7 @@ function EstoqueEntrada() {
                 </tbody>
             </table>
 
-            <span className="block text-sm mt-12 text-gray-500 sm:text-center dark:text-gray-400">© 2023 Morning Star Suplly</span>
+            <span className="block text-sm mt-12 text-gray-500 sm:text-center dark:text-gray-400">© 2023 Victor Rabello</span>
 
         </div>
     )
